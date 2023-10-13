@@ -2,135 +2,72 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <style>
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
-
-        .jumbotron {
-            background: #358CCE;
-            color: #FFF;
-            border-radius: 0px;
-        }
-
-        .jumbotron-sm {
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-
-        .jumbotron small {
-            color: #FFF;
-        }
-
-        .h1 small {
-            font-size: 24px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5518415adf.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-    <nav style="background-color: black; margin-bottom: 0; border-radius: 0;" class="navbar navbar-inverse mb-5">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" style="color: red;" href="index.html">QR Code Generator</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="homepage.html">Generate QR Code</a></li>
-                    <li><a href="https://www.doganalican46.dev/" target="_blank">My Website</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+
+    <div class="header">
+        <div class="navbar">
+            <img src="images.png" alt="Logo" width="70px;">
+            <h1>QR CODE GENERATOR</h1>
+            <ul>
+                <li><a  href="index.html">Home </i></a></li>
+                <li><a href="https://www.doganalican46.dev/" target="_blank">My Website </i></a></li>
+                <li><a class="active" href="contact.html">Contact </i></a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+
+    
 
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="well well-sm">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name"
-                                        required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">
-                                        Email Address</label>
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><span
-                                                class="glyphicon glyphicon-envelope"></span>
-                                        </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                            required="required" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">
-                                        Subject</label>
-                                    <select id="subject" name="subject" class="form-control" required="required">
-                                        <option value="na" selected="">Choose One:</option>
-                                        <option value="service">General Customer Service</option>
-                                        <option value="suggestions">Suggestions</option>
-                                        <option value="product">Product Support</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25"
-                                        required="required" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                    Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-
+    <div class="footer">
+        <div class="col">
+            <ul class="footer-social" style="text-align:center;">
+                <li><a  href="https://www.facebook.com/doganalican46/" target="_blank" class="facebook"><i style="font-size: 24px;"
+                            class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/can_dgn46" class="twitter"><i style="font-size: 24px;" class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/can.dgn.46/" target="_blank" class="instagram"><i style="font-size: 24px;"
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/doganalican46/" target="_blank" class="linkedin"><i style="font-size: 24px;"
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/doganalican46" target="_blank" class="linkedin"><i style="font-size: 24px;"
+                            class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="footer-copyright">
+                <span>&copy; This website created by <a href="https://www.doganalican46.dev/" style="color: red;"
+                        target="_blank">Ali Can Dogan</a>
             </div>
         </div>
     </div>
 
+    <script>
+        let imgBox = document.getElementById("imgBox");
+        let qrImage = document.getElementById("qrImage");
+        let qrText = document.getElementById("qrText");
+        let btndownload = document.querySelector('btndownload');
+        function GenerateQR() {
 
-    <footer style="background-color: black; color: white;" class="container-fluid text-center navbar-fixed-bottom">
-        <h6>@Copyright 2023 - All Rights Reserved. | Created by <a style="color: red;"
-                href="https://www.doganalican46.dev/" target="_blank">Ali Can Doğan</a></h6>
-    </footer>
+            if (qrText.value.length > 0) {
+                qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+                imgBox.classList.add("show-img");
+            } else {
+                qrText.classList.add("error");
+                setTimeout(() => {
+                    qrText.classList.remove('error');
+                }, 1000);
+            }
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        }
+    </script>
 
 </body>
 
