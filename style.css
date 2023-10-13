@@ -51,8 +51,21 @@ body {
     font-weight: 500;
 }
 
-#downloadBtn{
-    width: 54%; /* Set the width according to your preference, leaving some space for margin */
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container input,
+    .container button {
+        width: calc(100% - 20px);
+    }
+}
+
+#downloadBtn {
+    width: 54%;
+    /* Set the width according to your preference, leaving some space for margin */
     height: 50px;
     background: #262a2f;
     color: #fff;
@@ -61,14 +74,17 @@ body {
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin: 20px 1%; 
+    margin: 20px 1%;
     font-weight: 500;
-    display: inline-block; 
+    display: inline-block;
 }
+
 #clearbtn {
-    width: 40%; /* Set the width according to your preference, leaving some space for margin */
+    width: 40%;
+    /* Set the width according to your preference, leaving some space for margin */
     height: 50px;
-    background: red; /* Use the specified background color for the Clear button */
+    background: red;
+    /* Use the specified background color for the Clear button */
     color: #fff;
     border: 0;
     outline: 0;
@@ -171,7 +187,7 @@ body {
 
 .navbar a.active {
     font-weight: bold;
-    font-size: 18px; 
+    font-size: 18px;
     color: red;
 }
 
