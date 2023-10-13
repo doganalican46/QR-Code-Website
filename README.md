@@ -1,5 +1,5 @@
 # QR CODE GENERATOR WEBSITE
-## Live Demo: <a href="https://main--qrcode-generator-free.netlify.app/" target="_blank"></a>
+## Live Demo: https://main--qrcode-generator-free.netlify.app/
 ___________________________________________________________________________________________________________________
 
 ## Project Scope and Purpose:
